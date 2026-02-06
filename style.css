@@ -2075,3 +2075,61 @@ footer {
         height: 200px !important;
     }
 }
+/* Final Perfection Refinements */
+@media (max-width: 600px) {
+    /* Process Steps - Space Saving 2-Column Grid */
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    .step-card {
+        padding: 15px 10px !important;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .step-number {
+        font-size: 1.5rem !important;
+        margin-bottom: 5px !important;
+    }
+
+    .step-card h3 {
+        font-size: 0.9rem !important;
+    }
+
+    .step-card p {
+        font-size: 0.75rem !important;
+        line-height: 1.2 !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* Reviews Centering */
+    .review-card {
+        text-align: center;
+    }
+
+    .stars {
+        display: block;
+        margin: 0 auto 10px !important;
+        letter-spacing: 2px;
+    }
+
+    .reviewer-info {
+        margin-top: 10px;
+    }
+
+    .reviewer-name {
+        font-size: 0.9rem !important;
+        font-weight: 700;
+    }
+
+    .reviewer-loc {
+        font-size: 0.75rem !important;
+    }
+}
