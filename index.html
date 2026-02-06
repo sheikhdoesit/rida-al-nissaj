@@ -1,17 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Rida Al Nissaj | Premium bespoke tailoring from the Holy City of Makkah. Handcrafted modest menswear blending tradition with modern elegance.">
+  <meta name="description" content="Rida Al Nissaj | Premium bespoke tailoring from the Holy City of Makkah. Handcrafted modest menswear blending tradition with modern elegance.">
   <title>Rida Al Nissaj | Premium Tailoring from Makkah</title>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=12">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
-
 <body>
   <header id="header">
     <div class="container nav-container">
@@ -35,15 +32,9 @@
             <a href="#" onclick="changeLang('de')">Deutsch</a>
           </div>
         </div>
-        <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        </button>
-        <button class="icon-btn" onclick="toggleCart()" aria-label="Cart">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-        </button>
-        <button class="icon-btn" id="user-icon-btn" onclick="handleUserIconClick()" aria-label="Account">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        </button>
+        <button class="icon-btn" onclick="toggleSearch()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="icon-btn" onclick="toggleCart()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg></button>
+        <button class="icon-btn" onclick="handleUserIconClick()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></button>
         <a href="#fitting" class="btn-cta" data-i18n="btn_book">Book Now</a>
       </div>
     </div>
@@ -57,13 +48,8 @@
   </div>
 
   <div id="cart-sidebar" class="cart-sidebar">
-    <div class="cart-header">
-      <h3 data-i18n="cart_title">Shopping Bag</h3>
-      <button class="close-cart" onclick="toggleCart()">&times;</button>
-    </div>
-    <div class="cart-items">
-      <p class="empty-cart-msg" data-i18n="cart_empty">Your bag is empty.</p>
-    </div>
+    <div class="cart-header"><h3 data-i18n="cart_title">Shopping Bag</h3><button class="close-cart" onclick="toggleCart()">&times;</button></div>
+    <div class="cart-items"><p class="empty-cart-msg" data-i18n="cart_empty">Your bag is empty.</p></div>
     <div class="cart-footer">
       <div class="total-row"><span data-i18n="cart_total">Total</span><span id="cart-total-display">0.00 SAR</span></div>
       <button class="checkout-btn" data-i18n="btn_checkout">Checkout</button>
@@ -71,61 +57,60 @@
   </div>
   <div class="cart-backdrop" onclick="toggleCart()"></div>
 
-  <div id="dashboard-modal" class="dashboard-modal">
-    <div class="modal-backdrop dashboard-backdrop" onclick="closeDashboard()"></div>
-    <div class="dashboard-content">
-      <button class="close-modal" onclick="closeDashboard()">&times;</button>
-      <h2 data-i18n="dash_title">My Account</h2>
-      <button class="logout-btn" onclick="mockLogout()" data-i18n="btn_logout">Log Out</button>
-    </div>
-  </div>
-
   <section class="hero">
     <div class="hero-content">
       <span class="subtitle" data-i18n="hero_subtitle">Makkah Al-Mukarramah</span>
-      <h1 data-i18n="hero_title">Bespoke <br><span>Perfection</span></h1>
-      <p data-i18n="hero_desc">Handcrafted elegance from the heart of the Holy City.</p>
-      <a href="#collection" class="hero-btn" data-i18n="hero_cta">Shop Now</a>
+      <h1 data-i18n="hero_title">Tailored for <br><span>Perfection</span></h1>
+      <p data-i18n="hero_desc">Bespoke thobes crafted with tradition and elegance.</p>
+      <a href="#collection" class="hero-btn" data-i18n="hero_cta">Explore Collection</a>
     </div>
   </section>
 
   <section id="process" class="process">
-    <div class="container text-center">
-      <div class="section-header">
-        <h2 data-i18n="process_title">The Process</h2>
-        <p data-i18n="process_subtitle">Simple. Elegant. Bespoke.</p>
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 data-i18n="process_title">The Bespoke Experience</h2>
+        <p data-i18n="process_subtitle">Simple steps to perfection.</p>
       </div>
       <div class="steps-grid">
-        <div class="step-card"><span class="step-number">01</span><h3 data-i18n="step1_title">Fabric</h3><p data-i18n="step1_desc">Choose premium wools/cottons.</p></div>
-        <div class="step-card"><span class="step-number">02</span><h3 data-i18n="step2_title">Fitting</h3><p data-i18n="step2_desc">Input your exact size.</p></div>
-        <div class="step-card"><span class="step-number">03</span><h3 data-i18n="step3_title">Stitch</h3><p data-i18n="step3_desc">Handcrafted in Makkah.</p></div>
+        <div class="step-card"><span class="step-number">01</span><h3 data-i18n="step1_title">Select Fabric</h3><p data-i18n="step1_desc">Premium cottons and wools.</p></div>
+        <div class="step-card"><span class="step-number">02</span><h3 data-i18n="step2_title">Provide Fitting</h3><p data-i18n="step2_desc">Input precise measurements.</p></div>
+        <div class="step-card"><span class="step-number">03</span><h3 data-i18n="step3_title">Expert Stitching</h3><p data-i18n="step3_desc">Handcrafted with precision.</p></div>
       </div>
     </div>
   </section>
 
   <section id="collection" class="cloth-selection">
     <div class="container">
-      <div class="section-header text-center">
-        <h2 data-i18n="collection_title">Fabrics</h2>
-      </div>
+      <div class="section-header text-center"><h2 data-i18n="collection_title">Premium Fabrics</h2></div>
       <div class="cloth-grid">
         <div class="cloth-card">
-          <div class="cloth-bg pattern-black" onclick="openMeasurementModal('cloth1_name', 850)"></div>
+          <div class="cloth-bg pattern-black" onclick="selectCloth('Royal Black Wool')"></div>
           <div class="cloth-info">
-            <h3 class="cloth-name" data-i18n="cloth1_name">Royal Black</h3>
+            <h3 class="cloth-name" data-i18n="cloth1_name">Royal Black Wool</h3>
             <div class="cloth-actions">
               <span class="cloth-price-tag">850 SAR</span>
-              <button class="add-btn" onclick="openMeasurementModal('cloth1_name', 850)" data-i18n="btn_add_basket">+</button>
+              <button class="add-btn" onclick="openMeasurementModal('cloth1_name', 850)" data-i18n="btn_add_basket">Add</button>
             </div>
           </div>
         </div>
         <div class="cloth-card">
-          <div class="cloth-bg pattern-white" onclick="openMeasurementModal('cloth2_name', 600)"></div>
+          <div class="cloth-bg pattern-white" onclick="selectCloth('Signature White Cotton')"></div>
           <div class="cloth-info">
             <h3 class="cloth-name" data-i18n="cloth2_name">Signature White</h3>
             <div class="cloth-actions">
               <span class="cloth-price-tag">600 SAR</span>
-              <button class="add-btn" onclick="openMeasurementModal('cloth2_name', 600)" data-i18n="btn_add_basket">+</button>
+              <button class="add-btn" onclick="openMeasurementModal('cloth2_name', 600)" data-i18n="btn_add_basket">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="cloth-card">
+          <div class="cloth-bg pattern-cream" onclick="selectCloth('Cream Gold Blend')"></div>
+          <div class="cloth-info">
+            <h3 class="cloth-name" data-i18n="cloth3_name">Cream Gold Blend</h3>
+            <div class="cloth-actions">
+              <span class="cloth-price-tag">1200 SAR</span>
+              <button class="add-btn" onclick="openMeasurementModal('cloth3_name', 1200)" data-i18n="btn_add_basket">Add</button>
             </div>
           </div>
         </div>
@@ -135,25 +120,12 @@
 
   <section id="reviews" class="reviews-section">
     <div class="container">
-      <div class="section-header text-center">
-        <h2 data-i18n="reviews_title">Testimonials</h2>
-      </div>
+      <div class="section-header text-center"><h2 data-i18n="reviews_title">Client Testimonials</h2></div>
       <div class="reviews-slider">
         <div class="reviews-track">
-          <div class="review-slide">
-            <div class="review-card">
-              <div class="stars">★★★★★</div>
-              <p class="review-text" data-i18n="review1_text">"Stunning fit and detail."</p>
-              <span class="reviewer-name" data-i18n="review1_name">Omar Al-Ghamdi</span>
-            </div>
-          </div>
-          <div class="review-slide">
-            <div class="review-card">
-              <div class="stars">★★★★★</div>
-              <p class="review-text" data-i18n="review2_text">"Excellent bespoke process."</p>
-              <span class="reviewer-name" data-i18n="review2_name">Fahad Al-Saud</span>
-            </div>
-          </div>
+          <div class="review-slide"><div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="review1_text">"Stunning fit."</p><span class="reviewer-name" data-i18n="review1_name">Omar Al-Ghamdi</span></div></div>
+          <div class="review-slide"><div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="review2_text">"Excellent service."</p><span class="reviewer-name" data-i18n="review2_name">Fahad Al-Saud</span></div></div>
+          <div class="review-slide"><div class="review-card"><div class="stars">★★★★★</div><p class="review-text" data-i18n="review3_text">"Truly premium."</p><span class="reviewer-name" data-i18n="review3_name">Mohammed Salem</span></div></div>
         </div>
       </div>
     </div>
@@ -161,11 +133,11 @@
 
   <section id="fitting" class="fitting-section">
     <div class="container">
-      <h2 data-i18n="fit_title">Your Fit</h2>
-      <form id="fitting-form" onsubmit="event.preventDefault(); alert('Order Placed!');">
-        <input type="text" placeholder="Name" required class="form-input">
-        <input type="number" placeholder="Height" required class="form-input">
-        <button type="submit" class="submit-btn" data-i18n="btn_complete_order">Order Now</button>
+      <h2 data-i18n="fit_title">Your Perfect Fit</h2>
+      <form id="fitting-form" onsubmit="handleFormSubmit(event)">
+        <input type="text" id="name" placeholder="Name" required class="form-input">
+        <input type="number" id="height" placeholder="Height (cm)" required class="form-input">
+        <button type="submit" class="submit-btn" data-i18n="btn_complete_order">Complete Order</button>
       </form>
     </div>
   </section>
@@ -173,20 +145,20 @@
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-col">
+        <div class="footer-col brand-col">
           <img src="logo_text.png" alt="Rida" class="footer-brand-text">
-          <p data-i18n="footer_brand_desc">Premium Bespoke Tailoring.</p>
+          <p data-i18n="footer_brand_desc">Traditionally modern range of Jubbas and Thawps.</p>
         </div>
         <div class="footer-col">
-          <h4 data-i18n="footer_links">Links</h4>
+          <h4 data-i18n="footer_support">Support</h4>
           <ul class="footer-links">
-            <li><a href="#" data-i18n="footer_about">About</a></li>
-            <li><a href="#" data-i18n="footer_contact">Contact</a></li>
+            <li><a href="#" data-i18n="footer_about">About Us</a></li>
+            <li><a href="#" data-i18n="footer_contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom text-center">
-        <p data-i18n="footer_copyright">&copy; 2026 Rida Al Nissaj</p>
+        <p data-i18n="footer_copyright">&copy; 2026 Rida Al Nissaj. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
@@ -212,12 +184,21 @@
       <h3 data-i18n="measure_title">Fitting</h3>
       <p id="measure-product-name"></p>
       <form onsubmit="event.preventDefault(); saveMeasurementAndAddToCart();">
-        <input type="number" id="m-height" placeholder="Height" required class="form-input">
+        <input type="number" id="m-height" placeholder="Height" required>
         <button type="submit" class="btn-primary-full" data-i18n="btn_save_add">Save & Add</button>
       </form>
     </div>
   </div>
 
-  <script src="main.js?v=12"></script>
+  <div id="dashboard-modal" class="dashboard-modal">
+    <div class="modal-backdrop dashboard-backdrop" onclick="closeDashboard()"></div>
+    <div class="dashboard-content">
+      <button class="close-modal" onclick="closeDashboard()">&times;</button>
+      <h2 data-i18n="dash_title">My Account</h2>
+      <button class="logout-btn" onclick="mockLogout()" data-i18n="btn_logout">Log Out</button>
+    </div>
+  </div>
+
+  <script src="main.js?v=13"></script>
 </body>
 </html>
