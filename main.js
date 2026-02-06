@@ -649,6 +649,7 @@ window.saveMeasurementAndAddToCart = function () {
 document.addEventListener('DOMContentLoaded', () => {
     const lang = document.documentElement.lang || 'en';
     changeLang(lang);
+    startReviewSlider(); // Initialize reviews slider
 
     // Close language menu on outside click
     document.addEventListener('click', (e) => {
@@ -671,3 +672,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// --- Review Slider Logic ---
+function startReviewSlider() {
+    const track = document.querySelector('.reviews-track');
+    if (!track) return;
+
+    let index = 0;
+    const cards = document.querySelectorAll('.review-card');
+    const total = cards.length;
+
+    function moveSlider() {
+        index++;
+        if (index >= total) {
+            index = 0;
+        }
+        const offset = -index * 100;
+        track.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Auto slide every 5 seconds
+    setInterval(moveSlider, 5000);
+}
