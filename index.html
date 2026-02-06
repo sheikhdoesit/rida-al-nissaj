@@ -28,49 +28,50 @@
         <a href="#collection" data-i18n="nav_fabrics">Fabrics</a>
         <a href="#fitting" data-i18n="nav_fitting">Start Fitting</a>
 
-        <!-- Language Switcher (Refined) -->
-        <div class="lang-switcher">
-          <button class="lang-btn" onclick="toggleLangMenu()">
-            <span id="current-lang">EN</span> <span class="arrow-down">▼</span>
-          </button>
-          <div class="lang-menu" id="lang-menu">
-            <a href="#" onclick="changeLang('en')">English</a>
-            <a href="#" onclick="changeLang('ar')">العربية</a>
-            <a href="#" onclick="changeLang('de')">Deutsch</a>
+        <div class="header-actions">
+          <!-- Language Switcher (Moved for Mobile Visibility) -->
+          <div class="lang-switcher">
+            <button class="lang-btn" onclick="toggleLangMenu()">
+              <span id="current-lang">EN</span> <span class="arrow-down">▼</span>
+            </button>
+            <div class="lang-menu" id="lang-menu">
+              <a href="#" onclick="changeLang('en')">English</a>
+              <a href="#" onclick="changeLang('ar')">العربية</a>
+              <a href="#" onclick="changeLang('de')">Deutsch</a>
+            </div>
           </div>
+
+          <!-- Search Icon -->
+          <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
+            ...
+            <svg viewBox="0 0 24 24" fill="none" class="nav-icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Cart Icon -->
+          <button class="icon-btn" onclick="toggleCart()" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" class="nav-icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </button>
+
+          <!-- User Icon -->
+          <button class="icon-btn" id="user-icon-btn" onclick="handleUserIconClick()" aria-label="Account">
+            <svg viewBox="0 0 24 24" fill="none" class="nav-icon" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+
+          <a href="#fitting" class="btn-cta" data-i18n="btn_book">Book Appointment</a>
         </div>
-      </nav>
-      <div class="header-actions">
-        <!-- Search Icon -->
-        <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
-          <svg viewBox="0 0 24 24" fill="none" class="nav-icon" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-
-        <!-- Cart Icon -->
-        <button class="icon-btn" onclick="toggleCart()" aria-label="Cart">
-          <svg viewBox="0 0 24 24" fill="none" class="nav-icon" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-        </button>
-
-        <!-- User Icon -->
-        <button class="icon-btn" id="user-icon-btn" onclick="handleUserIconClick()" aria-label="Account">
-          <svg viewBox="0 0 24 24" fill="none" class="nav-icon" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-            <circle cx="12" cy="7" r="4"></circle>
-          </svg>
-        </button>
-
-        <a href="#fitting" class="btn-cta" data-i18n="btn_book">Book Appointment</a>
-      </div>
     </div>
   </header>
 
