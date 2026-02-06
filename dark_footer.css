@@ -1,0 +1,74 @@
+/* Dark Premium Footer Overrides */
+footer {
+    background-color: #0f0f0f;
+    /* Deep Black */
+    color: #fff;
+    margin-top: 0;
+    /* Align flush with content */
+}
+
+.footer-container {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: transparent;
+    /* Remove any previous container bg */
+}
+
+.footer-brand-name {
+    color: #fff !important;
+}
+
+.brand-desc {
+    color: #aaa !important;
+}
+
+.footer-col h4 {
+    color: var(--color-gold) !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    color: #bbb !important;
+}
+
+.footer-links a:hover {
+    color: var(--color-gold) !important;
+    padding-left: 5px;
+    /* Subtle hover movement */
+}
+
+.social-icon {
+    background-color: #222 !important;
+    color: #fff !important;
+    border: 1px solid #333;
+}
+
+.social-icon:hover {
+    background-color: var(--color-gold) !important;
+    border-color: var(--color-gold);
+    color: #000 !important;
+}
+
+.newsletter-input {
+    background-color: #222;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.newsletter-input:focus {
+    border-color: var(--color-gold);
+}
+
+.footer-bottom {
+    border-top-color: #222 !important;
+    color: #666 !important;
+}
+
+.footer-legal a {
+    color: #666 !important;
+}
+
+.footer-legal a:hover {
+    color: var(--color-gold) !important;
+}

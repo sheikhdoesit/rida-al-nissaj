@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Rida Al Nissaj</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .track-page {
+            padding: 150px 0 100px;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .track-box {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            background: #fafafa;
+            padding: 50px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .track-input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .track-result {
+            margin-top: 30px;
+            display: none;
+            color: green;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <a href="/" class="logo-link"
+                style="color:#000; text-decoration:none; font-family:var(--font-serif); font-size:1.5rem;">
+                Rida Al Nissaj
+            </a>
+            <a href="/" class="btn-cta">Back to Home</a>
+        </div>
+    </header>
+
+    <section class="track-page">
+        <div class="container">
+            <div class="track-box">
+                <h1 style="font-family: var(--font-serif); color: var(--color-gold-dark); margin-bottom: 20px;">Track
+                    Your Order</h1>
+                <p style="margin-bottom: 30px; color: #666;">Enter your Order ID found in your confirmation email.</p>
+
+                <input type="text" class="track-input" placeholder="Order ID (e.g., #RN-5291)">
+                <button class="submit-btn" onclick="trackOrder()">Track Status</button>
+
+                <div id="result" class="track-result">
+                    Status: In Production (Makkah Workshop)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function trackOrder() {
+            const btn = document.querySelector('button');
+            btn.textContent = 'Searching...';
+            setTimeout(() => {
+                document.getElementById('result').style.display = 'block';
+                btn.textContent = 'Track Status';
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
