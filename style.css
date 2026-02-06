@@ -346,7 +346,6 @@ header.header-hidden {
     height: 400px;
     overflow: hidden;
     cursor: pointer;
-    group: 1;
 }
 
 .cloth-bg {
